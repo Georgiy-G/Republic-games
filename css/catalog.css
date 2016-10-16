@@ -1,0 +1,5 @@
+.breadcrumbs {
+  background-color: #ebebeb;
+  background-image: linear-gradient(to top, #ebebeb 0%, #f4f4f4 79%, #f7f7f7 100%);
+  padding-bottom: 10px;
+}

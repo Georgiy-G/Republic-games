@@ -1,0 +1,85 @@
+.btn {
+  text-decoration: none;
+  outline: 0;
+  .transition(0.3s all ease);
+  display: inline-block;
+  vertical-align: top;
+
+  &.btn-red {
+    color: #FFF;
+    font-family: @baseFontFamily;
+    font-size: 14px;
+    font-weight: 400;
+    background: #c40000;
+    padding: 2px 12px;
+    .border-radius(3px);
+    border: 1px solid transparent;
+
+    &:hover {
+      background: #fff;
+      color: #c40000;
+      border: 1px solid #c40000;
+    }
+  }
+
+  &.btn-gray {
+    background: #c5c7c6;
+    .border-radius(8px);
+    color: #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=15, Direction=135, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.2);/*FF 3.5+*/
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.2);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=15, Direction=135, Color=#000000); /*IE 5.5-7*/
+    padding: 0 5px;
+    font-weight: 400;
+
+    &:hover {
+      background: #c40000;
+    }
+  }
+}
+
+.btn-mob {
+  display: none;
+  vertical-align: top;
+  margin: 10px 0 0 0;
+  width:26px;
+  height:26px;
+  overflow: hidden;
+  z-index:300;
+
+  span {
+    display: block;
+    .size(26px,3px);
+    background: #c40000;
+    margin-top:5px;
+    .transition(0.3s all ease);
+    position: relative;
+
+    &:first-child {
+      margin-top:0;
+    }
+  }
+
+  &.active {
+    span {
+      &:nth-child(1) {
+        .rotate(45deg);
+        top:10px;
+      }
+
+      &:nth-child(2) {
+        .translate(-200%,0);
+
+      }
+
+      &:nth-child(3) {
+        .rotate(-45deg);
+        top:-6px;
+      }
+    }
+  }
+}

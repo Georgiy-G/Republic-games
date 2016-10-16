@@ -1,0 +1,51 @@
+.breadcrumbs {
+  background-color: #ebebeb;
+  background-image: linear-gradient(to top, #ebebeb 0%, #f4f4f4 79%, #f7f7f7 100%);
+  margin-top: 20px;
+  margin-bottom: 45px;
+  padding: 13px 0;
+}
+.breadcrumbs ul {
+  font-size: 0;
+}
+.breadcrumbs ul li {
+  display: inline-block;
+  padding: 0 14px;
+  padding-left: 16px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.breadcrumbs ul li:last-child::before {
+  content: "";
+  background: url(../img/icon-breadcrumbs.png) 0 0 no-repeat;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.breadcrumbs ul li a {
+  color: #c40000;
+}
+.basket-table table tr th {
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 10px 30px;
+}
+.basket-table table tr td {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+.basket-table table tr td .basket__title img {
+  float: left;
+}
+.basket-table table tr td .basket__title p {
+  float: right;
+}

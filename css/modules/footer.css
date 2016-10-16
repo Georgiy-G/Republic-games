@@ -1,0 +1,104 @@
+#footer {
+  background: -moz-linear-gradient(90deg, #f7f7f7 90%, #dfdfdf 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, 90deg, color-stop(90%, F7F7F7), color-stop(100%, DFDFDF));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(90deg, #f7f7f7 90%, #dfdfdf 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(90deg, #f7f7f7 90%, #dfdfdf 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #f7f7f7 90%, #dfdfdf 100%);
+  /* IE10+ */
+  padding: 18px 0 20px 0;
+}
+.footer__row {
+  margin: 13px 0 0 0;
+  line-height: 1.2;
+  font-size: 13px;
+}
+.footer__row p {
+  margin: 0;
+}
+.footer__row p a {
+  text-decoration: none;
+  outline: 0;
+  color: inherit;
+}
+.footer__row p a:hover {
+  text-decoration: underline;
+}
+.footer__copy-lang {
+  float: left;
+  color: #525252;
+  font-size: 13px;
+}
+.footer__copy-lang a {
+  text-decoration: none;
+  outline: 0;
+  color: inherit;
+}
+.footer__copy-lang a:hover {
+  text-decoration: underline;
+}
+.footer__menu {
+  float: right;
+}
+.footer__menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__menu ul li {
+  display: inline-block;
+  margin-left: 45px;
+}
+.footer__menu ul li:first-child {
+  margin: 0;
+}
+.footer__menu ul li a {
+  color: #525252;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  outline: 0;
+}
+.footer__menu ul li a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1100px) {
+  .footer__copy-lang {
+    float: none;
+    text-align: center;
+  }
+  .footer__menu {
+    margin-top: 15px;
+    float: none;
+    text-align: center;
+  }
+  .footer__menu ul li {
+    margin: 0 15px;
+  }
+  .footer__menu ul li:first-child {
+    margin: 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__menu ul li {
+    margin: 0 5px;
+  }
+  .footer__menu ul li:first-child {
+    margin: 0 5px;
+  }
+  .footer__row p {
+    text-align: center;
+  }
+}
+@media (max-width: 568px) {
+  .footer__menu ul li {
+    margin: 3px 5px;
+    width: 100%;
+  }
+  .footer__menu ul li:first-child {
+    margin: 3px 5px;
+  }
+}
